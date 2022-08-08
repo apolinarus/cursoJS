@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validação de nacionalidade</title>
+</head>
+<body>
+    <h1>Sistema de verificação de nacionalidade</h1>
+    Informe o país que você nasceu:  <input type="text" name="nacionalidade" id="nacionalidade">
+    <input type="button" value="Verificar" id="nacionalidade" onclick="verficaNacionalidade()">
+    <div id="res"></div>
+    <style>
+        body{
+            background-color: whitesmoke;
+            font: normal 20px arial;
+        }
+        #res {
+            font: italic bold 22px arial;
+        }
+    </style>
+
+    <script>
+        function verficaNacionalidade(){
+            
+            var nacionalidade = document.querySelector('input#nacionalidade')
+            var resultado = document.querySelector('div#res')
+            
+            if (nacionalidade === 'Brasil' ) {
+                resultado.innerHTML = `<p>Você é brasileiro.</p>`
+            } else {
+                resultado.innerHTML = `<p>Você é estrangeiro.</p>`
+        }
+        }
+    </script>
+    
+</body>
+</html>
