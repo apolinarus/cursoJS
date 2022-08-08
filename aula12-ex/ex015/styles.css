@@ -1,0 +1,36 @@
+body{
+    background: goldenrod;
+    font: normal 15pt arial;
+}
+
+header{
+    color: white;
+    text-align: center;
+
+}
+
+section{
+    background: whitesmoke;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.137);
+    
+
+}
+
+footer{
+    color: white;
+    text-align: center;
+    font-style: italic;
+
+}
+
+#button {
+    text-align: center;
+}
+
+#res {
+    text-align: center;
+}
